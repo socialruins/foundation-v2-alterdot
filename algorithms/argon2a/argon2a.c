@@ -6,7 +6,6 @@
 #include "ar2/argon2.h"
 #include "ar2/cores.h"
 #include "ar2/ar2-scrypt-jane.h"
-#include "algo-gate-api.h"
 
 #define T_COSTS 2
 #define M_COSTS 16
