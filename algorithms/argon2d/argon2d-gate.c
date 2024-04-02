@@ -1,4 +1,4 @@
-#include "argon2d/argon2.h"
+#include "utils/argon2.h"
 
 static const size_t INPUT_BYTES = 80;  // Lenth of a block header in bytes. Input Length = Salt Length (salt = input)
 static const size_t OUTPUT_BYTES = 32; // Length of output needed for a 256-bit hash
@@ -6,7 +6,7 @@ static const unsigned int DEFAULT_ARGON2_FLAG = 2; //Same as ARGON2_DEFAULT_FLAG
 
 // Bitcreds
 
-void argon2d_bcrs_hash( void *output, const void *input )
+void argon2d_bcrs_hash( const void *input, void *output, uint32_t len )
 {
 	argon2_context context;
 	context.out = (uint8_t *)output;

@@ -21,9 +21,9 @@
 
 #include "argon2.h"
 #include "core.h"
-#include "../simd-utils.h"
-#include "../blake2/blake2.h"
-#include "../blake2/blamka-round-opt.h"
+#include "simd-utils.h"
+#include "blake2/blake2.h"
+#include "blake2/blamka-round-opt.h"
 
 /*
  * Function fills a new memory block and optionally XORs the old block over the new one.
