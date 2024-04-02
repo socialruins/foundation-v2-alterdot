@@ -26,11 +26,11 @@ NAN_METHOD(argon2d16000) {
 
   // Process/Define Passed Parameters
   char * input = Buffer::Data(Nan::To<v8::Object>(info[0]).ToLocalChecked());
-  uint32_t input_len = Buffer::Length(Nan::To<v8::Object>(info[0]).ToLocalChecked());
+  //uint32_t input_len = Buffer::Length(Nan::To<v8::Object>(info[0]).ToLocalChecked());
   char output[32];
 
   // Hash Input Data and Return Output
-  argon2d_bcrs_hash(input, output, input_len);
+  argon2d_bcrs_hash(output, input);
   info.GetReturnValue().Set(Nan::CopyBuffer(output, 32).ToLocalChecked());
 }
 
