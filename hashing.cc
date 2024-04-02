@@ -6,7 +6,7 @@
 #include "nan.h"
 
 // Main Imports
-#include "algorithms/argon2d/argon2d-gate.h"
+#include "algorithms/argon2d-gate.h"
 #include "algorithms/sha256d/sha256d.h"
 
 using namespace node;
