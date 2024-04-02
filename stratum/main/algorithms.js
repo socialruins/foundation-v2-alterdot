@@ -6,7 +6,7 @@ const hashing = require("bindings")("hashing.node");
 const Algorithms = {
   // argon2d16000 Algorithm
   argon2d16000: {
-    multiplier: Math.pow(2, 16),
+    multiplier: 1,
     diff: parseInt(
       "0x00000000ffff0000000000000000000000000000000000000000000000000000"
     ),
