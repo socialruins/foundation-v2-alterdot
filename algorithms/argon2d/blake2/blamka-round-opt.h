@@ -29,7 +29,7 @@
 #include <x86intrin.h>
 #endif
 
-#include "simd-utils.h"
+#include "../simd-utils.h"
 
 #if !defined(__AVX512F__)
 #if !defined(__AVX2__)
